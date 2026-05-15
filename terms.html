@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Crystalline Max</title>
+<meta name="description" content="Terms of Service for Crystalline Max Ltd. Read our booking, cancellation, refund, and liability terms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --charcoal:#0A0C10;
+  --teal:#00F5D4;
+  --blue:#00BBFF;
+  --white:#fff;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--charcoal);color:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.font-display{font-family:'Montserrat',sans-serif;font-weight:700}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem}
+.section{padding:6rem 0}
+@media(min-width:768px){.container{padding:0 3rem}}
+.eyebrow{font-size:12px;font-weight:700;color:var(--teal);letter-spacing:.4em;text-transform:uppercase;margin-bottom:1rem}
+.section-title{font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;line-height:1.1;margin-bottom:1rem}
+.section-title span{color:var(--teal)}
+
+/* Nav */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,12,16,.85);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);
+  border-bottom:1px solid rgba(255,255,255,.05);height:64px;
+  display:flex;align-items:center;
+}
+@media(min-width:768px){.nav{height:80px}}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%}
+.nav-logo{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--white)}
+@media(min-width:768px){.nav-logo{gap:.75rem}}
+.nav-logo-mark{
+  width:34px;height:34px;background:var(--white);color:var(--charcoal);
+  border:2px solid var(--charcoal);border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;
+}
+@media(min-width:768px){.nav-logo-mark{width:40px;height:40px;font-size:16px}}
+.nav-logo-text{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.15em;text-transform:uppercase}
+@media(min-width:768px){.nav-logo-text{font-size:16px;letter-spacing:.2em}}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-link{
+  color:rgba(255,255,255,.68);text-decoration:none;
+  font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;
+  transition:color .2s;
+}
+.nav-link:hover{color:var(--teal)}
+
+/* Legal */
+.legal{border-top:1px solid rgba(255,255,255,.05)}
+.legal-header{margin-bottom:3rem}
+.legal-updated{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:rgba(255,255,255,.35);margin-top:.75rem}
+.legal-body{max-width:780px}
+.legal-body section{margin-bottom:2.5rem}
+.legal-body h2{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:var(--teal);margin-bottom:.75rem}
+.legal-body p{font-size:.875rem;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:.75rem}
+.legal-body ul{list-style:disc;padding-left:1.25rem;margin-bottom:.75rem}
+.legal-body li{font-size:.875rem;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:.5rem}
+.legal-body .highlight{font-weight:700;color:var(--white)}
+
+/* Footer */
+.footer{background:#000;border-top:1px solid rgba(255,255,255,.05);padding:4rem 0 2rem}
+@media(min-width:768px){.footer{padding:5rem 0 2rem}}
+.footer-grid{display:grid;gap:2.5rem}
+@media(min-width:768px){.footer-grid{grid-template-columns:2fr 1fr 1fr;gap:3rem}}
+.footer h4{font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.5rem;text-transform:uppercase;margin-bottom:1.5rem}
+.footer h5{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:1.5rem}
+.footer p,.footer a{font-size:.875rem;color:rgba(255,255,255,.68);text-decoration:none;line-height:1.8}
+.footer a:hover{color:var(--teal)}
+.footer-bottom{
+  margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.05);
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;
+  font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  color:rgba(255,255,255,.45);
+}
+
+/* WhatsApp CTA */
+.wa-btn{
+  display:inline-flex;align-items:center;gap:.75rem;
+  background:var(--teal);color:var(--charcoal);
+  font-family:'Montserrat',sans-serif;font-weight:700;font-size:10px;
+  text-transform:uppercase;letter-spacing:.1em;text-decoration:none;
+  padding:1rem 2rem;border-radius:12px;
+  transition:all .2s;border:none;cursor:pointer;
+}
+.wa-btn:hover{transform:scale(1.02);box-shadow:0 0 20px rgba(0,245,212,.4)}
+.wa-btn svg{width:18px;height:18px;flex-shrink:0}
+
+/* Responsive */
+@media(max-width:400px){
+  .container{padding:0 1rem}
+  .section-title{font-size:1.625rem}
+  .legal-body p,.legal-body li{font-size:.8125rem}
+  .nav-logo-text{font-size:11px;letter-spacing:.1em}
+  .nav-logo-mark{width:30px;height:30px;font-size:12px}
+}
+@media(max-width:640px){
+  .container{padding:0 1.25rem}
+  .section{padding:3rem 0}
+  .legal-header{margin-bottom:2rem}
+  .legal-body section{margin-bottom:2rem}
+  .footer{padding:2.5rem 0 1.5rem}
+  .footer h4{font-size:1.25rem;margin-bottom:1rem}
+  .footer-grid{gap:1.75rem}
+  .footer-bottom{margin-top:1.5rem;padding-top:1rem;flex-direction:column;align-items:flex-start;gap:.75rem}
+}
+</style>
+</head>
+<body>
+
+<script>
+const WA_NUMBER = '447350165173';
+const WA_BASE = `https://wa.me/${WA_NUMBER}`;
+function waLink(msg){return `${WA_BASE}?text=${encodeURIComponent(msg)}`}
+</script>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-mark">CM</div>
+      <span class="nav-logo-text">Crystalline Max</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Home</a>
+      <a href="privacy.html" class="nav-link">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section legal">
+  <div class="container">
+    <div class="legal-header">
+      <p class="eyebrow">Legal</p>
+      <h2 class="font-display section-title">Terms Of <span>Service</span></h2>
+      <p class="legal-updated">Last updated: 15 April 2026</p>
+    </div>
+    <div class="legal-body">
+      <section>
+        <h2>Service Scope</h2>
+        <p>Crystalline Max Ltd provides mobile vehicle detailing, residential cleaning, and commercial cleaning services. Service scope, add-ons, pricing, and scheduling depend on the booking details communicated via WhatsApp and any later confirmation or amendment accepted by Crystalline Max Ltd.</p>
+      </section>
+      <section>
+        <h2>Bookings And Confirmation</h2>
+        <ul>
+          <li>Submitting a booking request via WhatsApp does not by itself guarantee acceptance.</li>
+          <li>Bookings may remain pending until reviewed and either confirmed, reassigned, amended, or cancelled.</li>
+          <li>Customers are responsible for ensuring booking details, property or vehicle access conditions, and service-location information are accurate.</li>
+          <li>Crystalline Max Ltd may refuse, reschedule, or cancel a booking where location access, safety, staffing, time availability, or job scope make the booking impractical or unsafe.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Pricing And Payment</h2>
+        <ul>
+          <li>Quoted pricing is based on selected service type, add-ons, and booking information discussed via WhatsApp.</li>
+          <li>Payment arrangements are agreed during the booking process and may include bank transfer, card payment, or approved offline collection.</li>
+          <li>Crystalline Max Ltd may require payment before service, after service, or according to a commercial arrangement agreed for the booking.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Cancellations</h2>
+        <p>Appointments can be cancelled or rescheduled up to 24 hours before the scheduled time without penalty. Cancellations made less than 24 hours before the appointment may not be eligible for a refund.</p>
+      </section>
+      <section>
+        <h2>Refunds</h2>
+        <p>Refunds will only be considered in cases where Crystalline Max Ltd is unable to provide the agreed service, or where a service has been performed incorrectly and cannot be rectified. Refunds will not be issued for dissatisfaction due to pre-existing vehicle conditions, wear and tear, or factors outside our control.</p>
+        <p>To initiate a refund request, contact our team within 7 days of the service date by phone at <span class="highlight">07350 165173</span> or by email at <span class="highlight">admin@ctmds.co.uk</span>, providing your name, contact details, service date, and a brief explanation of the issue. Eligible refunds will be issued within 14 days of the request using the original payment method.</p>
+      </section>
+      <section>
+        <h2>Photo Evidence</h2>
+        <p>Service workflows may require before and after photographs for operational proof, quality control, training, fraud prevention, and dispute handling. By booking with Crystalline Max Ltd, the customer acknowledges that relevant job evidence may be collected and stored as part of the service record. Crystalline Max Ltd does not intend to use identifiable customer imagery for marketing without a separate permission basis.</p>
+      </section>
+      <section>
+        <h2>Access And Customer Responsibilities</h2>
+        <ul>
+          <li>The customer must provide safe and lawful access to the booked location, vehicle, or premises.</li>
+          <li>Where utilities, keys, parking, or site permissions are required, the customer is responsible for making them available.</li>
+          <li>Customers must disclose material conditions that could affect service delivery, including hazardous substances, aggressive animals, restricted access, or unsafe working conditions.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Liability</h2>
+        <p>Crystalline Max Ltd aims to perform services with reasonable care and skill. To the extent permitted by law, Crystalline Max Ltd is not liable for indirect or consequential loss, loss caused by inaccurate booking information, pre-existing defects, inaccessible areas, unsafe site conditions, or delays outside its reasonable control. Nothing in these terms excludes liability that cannot lawfully be excluded under the laws of England and Wales.</p>
+      </section>
+      <section>
+        <h2>Complaints And Claims</h2>
+        <p>Complaints should be raised as soon as reasonably possible after service delivery so Crystalline Max Ltd can investigate against booking records and any before/after photographic evidence retained.</p>
+      </section>
+      <section>
+        <h2>Governing Law</h2>
+        <p>These terms are governed by the laws of England and Wales. Any dispute arising in connection with the services will be governed by those laws unless mandatory consumer law requires otherwise.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>Terms, booking, and service questions should be directed to <span class="highlight">admin@ctmds.co.uk</span>.</p>
+      </section>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4 class="font-display">Crystalline Max</h4>
+        <p>Premium mobile car detailing and residential/commercial cleaning services based in Manchester, Salford, Stockport &amp; Oxfordshire. Precision in every detail, excellence in every clean.</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>admin@ctmds.co.uk</p>
+        <p>07350 165173</p>
+        <a onclick="window.open(waLink('Hi Crystalline Max — I have a question.'),'_blank')" style="display:inline-block;margin-top:1rem;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);cursor:pointer">Message on WhatsApp</a>
+      </div>
+      <div>
+        <h5>Location</h5>
+        <p>International House<br>61 Mosley Street<br>Manchester<br>M2 3HZ</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Crystalline Max Ltd. All Rights Reserved.</span>
+      <div style="display:flex;gap:1.5rem">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
